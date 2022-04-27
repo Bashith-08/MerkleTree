@@ -4,7 +4,7 @@
 
 The Merkle tree is an essential component of blockchain technology. It is one of the tree data structures which contains a tree full of hashes and the various blocks of data that provides an overview of all the transactions in a session. It creates Hash Key for each and every transaction, such that it enables efficient and secure content authentication in large amounts of data. Merkle trees are used by both Bitcoin and Cryptocurrency. It also aids in the verification of the data's accuracy and quality. Since there is unique hash key involved for each and every transaction, Merkle Tree is sometimes referred as a Hash Tree.
 
-## Architecture of Merkle tree:
+## Architecture of Merkle tree :
 
 In a blockchain, there will be different blocks. All these blocks are connected with the hash keys. And again each block contains different transactions. For each transaction, it generates different hash keys.
  For example, consider that there is a single block containing 4 transactions. Each transaction has its unique hash key. So from all these, we need to find a single hash key of that block. Here initially calculate the Hash of each transaction i.e, Hash1, HAsh2, Hash3, Hash4 for transaction1, 2, 3, 4 respectively. Each of them is hashed again as a pair of two hashes. It means Hashing of Hash1 and Hash2, resulting in Hash12, then hashing of Hash3 and Hash4, resulting in Hash34. The two hashes (Hash12 and Hash34) are then hashed once again to generate the Root Hash or Merkle Root. That is the hash of the Merkle root.
@@ -24,11 +24,11 @@ a, b, c, and d are some data elements and H is a hash function.
 a hash function acts as a “digital fingerprint” of some piece of data by mapping it to a simple string with a low probability that any other piece of data will map to the same string.
 Each node is created by hashing the concatenation of its “parents” in the tree.
 
-## Illustration of an Algorithm:
+## Illustration of an Algorithm :
 
 ![image info](https://miro.medium.com/max/1400/1*prtcx2rVQZmX9oZcyrC_gQ.png)
 
-## Implementation using java:
+## Implementation using java :
 
 **MerkTrees.java(LOGIC)**
 
@@ -123,7 +123,7 @@ public class MerkleTree {
 }
 ```
 
-## WORKING OF ALOGRITHM (OUTPUT)
+## WORKING OF ALOGRITHM (OUTPUT) :
 
 Actual Output
 ![image info](https://1.bp.blogspot.com/-qel_meQ_-WU/YKk7LOWIabI/AAAAAAAAt-k/0AnWT3LpgM8xD-kbEznTlhLizUEZczF3QCLcBGAsYHQ/s16000/Screenshot%2B2021-05-22%2Bat%2B10.40.38%2BPM.png)
@@ -138,5 +138,6 @@ We will get complete different output for that data block. So, it means, its par
 2. [Architecture of Merkle Tree](https://www.javatpoint.com/blockchain-merkle-tree)
 2. [Merkel Tree Algorithm](https://www.linkedin.com/pulse/merkle-tree-its-implementation-java-nikhil-goyal/)
 3. [Java Code Implementation](https://www.pranaybathini.com/2021/05/merkle-tree.html)
-###Deva Bashith
-###19BBS0162
+
+### Deva Bashith
+### 19BBS0162
